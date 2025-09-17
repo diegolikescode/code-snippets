@@ -1,0 +1,16 @@
+{
+  "name": "code-snippet",
+  "version": "1.0.0",
+  "main": "stream-snippet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-stringify": "^6.6.0",
+    "stream-json": "^1.9.1"
+  }
+}
