@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "stream-snippet.js",
   "scripts": {
+    "stream-snippet": "node stream-snippet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
