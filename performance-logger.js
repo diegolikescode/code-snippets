@@ -35,7 +35,7 @@ function startMemLogger({
         for (const e of list.getEntries()) {
             const m = process.memoryUsage()
             out.write(
-                `[GC] kind=${gcKindName(e.kind)} duration=${e.duration.toFixed(2)}ms ` +
+                `[GC] kind=${gcKindName(e.detail?.kind)} duration=${e.duration.toFixed(2)}ms ` +
                     `heapUsed=${mb(m.heapUsed)}MB rss=${mb(m.rss)}MB\n`
             )
         }
