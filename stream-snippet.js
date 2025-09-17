@@ -64,6 +64,8 @@ const startTodosPipeline = async () => {
     })
 
     await pipeline(reader, withParser(), mapTodo, csvStringify, fileWriter)
+
+    fileWriter.close()
 }
 
 const startCommentsPipeline = async () => {
@@ -100,6 +102,8 @@ const startCommentsPipeline = async () => {
     })
 
     await pipeline(reader, withParser(), mapPosts, csvStringify, fileWriter)
+
+    fileWriter.close()
 }
 
 async function main() {
